@@ -20,7 +20,7 @@
 */
 #ifndef ASYNCWEBSERVERHANDLERIMPL_H_
 #define ASYNCWEBSERVERHANDLERIMPL_H_
-#define HTTP_ANY 0b1111111 
+#define HTTP_ANY 0b1111111 //added this as platformio would not build as WebHandlerImpl.h:76:49: error: 'HTTP_ANY' was not declared in this scope. Probaly an issue my code but I cannot find it elsewhere. 
 #include <string>
 #ifdef ASYNCWEBSERVER_REGEX
 #include <regex>
