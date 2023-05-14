@@ -22,7 +22,7 @@
 #include "WebHandlerImpl.h"
 
 AsyncStaticWebHandler::AsyncStaticWebHandler(const char* uri, FS& fs, const char* path, const char* cache_control)
-  : _fs(fs), _uri(uri), _path(path), _default_file("index.htm"), _cache_control(cache_control), _last_modified(""), _callback(nullptr)
+  : _fs(fs), _uri(uri), _path(path), _default_file("index.html"), _cache_control(cache_control), _last_modified(""), _callback(nullptr) //edited htm to html as it wasn't loading the page I needed. 
 {
   // Ensure leading '/'
   if (_uri.length() == 0 || _uri[0] != '/') _uri = "/" + _uri;
