@@ -20,7 +20,7 @@
 */
 #ifndef ASYNCWEBSERVERHANDLERIMPL_H_
 #define ASYNCWEBSERVERHANDLERIMPL_H_
-
+#define HTTP_ANY 0b1111111 
 #include <string>
 #ifdef ASYNCWEBSERVER_REGEX
 #include <regex>
